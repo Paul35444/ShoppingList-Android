@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devc3.shoppinglist.MainActivity">
+
+    android:gravity="center"
+    android:orientation = "vertical"
+    android:background="@color/COLOR_ONE">
+
+    <ImageView
+        android:id="@+id/ID_ADDPERSON"
+        android:src="@drawable/icon_person"
+
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+
+        android:layout_marginBottom="-10dp"
+        android:layout_centerInParent="true"
+
+        android:onClick="METHOD_SEND_TO_ADD_PERSON"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/ID_ADDPERSON_TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/COLOR_WHITE"
+        android:paddingLeft="10dp"
+
+        android:layout_centerHorizontal="true"
+        android:onClick="METHOD_SEND_TO_ADD_PERSON"
+
+        android:layout_below="@id/ID_ADDPERSON"
+        android:text="ADD NEW PERSON" />
+
+
+    <ImageView
+        android:id="@+id/ID_VIEWLIST"
+        android:layout_below="@+id/ID_ADDPERSON_TEXT"
+        android:src="@drawable/icon_list"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-10dp"
+
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+
+        android:layout_centerHorizontal="true"
+
+        android:onClick="METHOD_SEND_TO_VIEWLIST"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/ID_VIEWLIST_TEXT"
+        android:layout_below="@id/ID_VIEWLIST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/COLOR_WHITE"
+
+        android:layout_centerHorizontal="true"
+
+        android:onClick="METHOD_SEND_TO_VIEWLIST"
+
+        android:text="VIEW LIST" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+
+        android:text="V 1.0"/>
+
+
+
+
+
+</RelativeLayout>
